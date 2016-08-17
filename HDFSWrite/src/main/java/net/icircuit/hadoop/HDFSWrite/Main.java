@@ -12,6 +12,7 @@ import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IOUtils;
+
 public class Main extends Configured implements Tool{
 
 	public static void main(String[] args) throws Exception {
