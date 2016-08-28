@@ -1,0 +1,5 @@
+package net.icircuit.hadoop.wordcount;
+
+public class WcReducer {
+
+}

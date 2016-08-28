@@ -1,0 +1,12 @@
+package net.icircuit.net.wc;
+
+import org.apache.hadoop.util.ToolRunner;
+
+public class Driver extends ToolRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
