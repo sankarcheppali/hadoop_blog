@@ -1,7 +1,0 @@
-package net.icircuit.hadoop.wordcount;
-
-import org.apache.hadoop.mapreduce.Reducer;
-
-public class WcReducer extends Reducer<Text,IntWritable,Text,IntWritable>{
-
-}

@@ -1,0 +1,5 @@
+package net.icircuit.hadoop.HadoopCompression;
+
+public class Decompress {
+
+}

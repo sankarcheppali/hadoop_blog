@@ -1,0 +1,10 @@
+package net.icircuit.hadoop.HadoopCompression;
+
+public class Compress {
+
+	public static void main(String[] args) throws ClassNotFoundException{ //will take compression codec as argumnet
+		Class<?> codeClass=Class.forName(args[0]);
+		Configuration conf = new Configuration();
+		
+	}
+}

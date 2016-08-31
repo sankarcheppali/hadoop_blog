@@ -1,0 +1,10 @@
+import org.apache.avro.generic.GenericRecord;
+import org.apache.avro.mapred.AvroKey;
+import org.apache.avro.mapred.AvroValue;
+import org.apache.hadoop.io.NullWritable;
+import org.apache.hadoop.mapreduce.Mapper;
+
+public class CountMovieTagsMapper extends Mapper<AvroKey<GenericRecord>,NullWritable,AvroKey<String>,AvroValue<Integer>> {
+	
+
+}

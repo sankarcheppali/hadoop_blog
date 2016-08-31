@@ -1,0 +1,17 @@
+import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.util.Tool;
+import org.apache.hadoop.util.ToolRunner;
+
+public class MRTextToAvro  extends Configured implements Tool{
+
+	
+	public static void main(String[] args) throws Exception {
+     int exitCode=ToolRunner.run(new MRTextToAvro(),args );
+	}
+
+	public int run(String[] arg0) throws Exception {
+		
+		return 0;
+	}
+
+}

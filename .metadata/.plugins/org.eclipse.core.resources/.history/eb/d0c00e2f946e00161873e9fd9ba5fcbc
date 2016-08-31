@@ -1,0 +1,12 @@
+import org.apache.hadoop.util.Tool;
+import org.apache.hadoop.util.ToolRunner;
+
+public class CountMoviesByYear extends Configured  implements Tool{
+
+	public static void main(String[] args)  {
+		
+		ToolRunner.run(new CountMoviesByYear(), args);
+
+	}
+
+}

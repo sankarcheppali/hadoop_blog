@@ -1,3 +1,8 @@
-D:\Sankar\code_3_1\Java\HadoopAvro\src\main\java\TextToAvro.java
-D:\Sankar\code_3_1\Java\HadoopAvro\src\main\java\GenericRecordExample.java
-D:\Sankar\code_3_1\Java\HadoopAvro\src\main\java\ReadAvroDataFile.java
+D:\Sankar\code_3_1\hadoop_blog\HadoopAvro\src\main\java\CountMovieTagsDriver.java
+D:\Sankar\code_3_1\hadoop_blog\HadoopAvro\src\main\java\GenericRecordExample.java
+D:\Sankar\code_3_1\hadoop_blog\HadoopAvro\src\main\java\ReadAvroDataFile.java
+D:\Sankar\code_3_1\hadoop_blog\HadoopAvro\src\main\java\CountMoviesByYear.java
+D:\Sankar\code_3_1\hadoop_blog\HadoopAvro\src\main\java\ValueSumReducer.java
+D:\Sankar\code_3_1\hadoop_blog\HadoopAvro\src\main\java\TextToAvro.java
+D:\Sankar\code_3_1\hadoop_blog\HadoopAvro\src\main\java\MRTextToAvro.java
+D:\Sankar\code_3_1\hadoop_blog\HadoopAvro\src\main\java\CountMovieTagsMapper.java

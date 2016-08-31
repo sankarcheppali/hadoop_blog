@@ -1,0 +1,21 @@
+{
+
+"name":"movies",
+
+"type":"record",
+
+"fields":[
+	{"name":"movieName",
+	"type":"string"
+    },
+
+	{"name":"year",
+	"type":"string"
+    },
+
+    {"name":"tags",
+    "type":{"type":"array","items":"string"}
+    }
+  ]
+
+}

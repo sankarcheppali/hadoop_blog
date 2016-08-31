@@ -1,0 +1,64 @@
+import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.NullWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
+import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+import org.apache.hadoop.util.Tool;
+import org.apache.hadoop.util.ToolRunner;
+
+import java.io.IOException;
+
+import org.apache.avro.*;
+import org.apache.avro.generic.GenericRecord;
+import org.apache.avro.mapred.AvroKey;
+import org.apache.avro.mapreduce.AvroJob;
+import org.apache.avro.mapreduce.AvroKeyOutputFormat;
+
+
+public class MRTextToAvro  extends Configured implements Tool{
+
+	
+	public static void main(String[] args) throws Exception {
+     int exitCode=ToolRunner.run(new MRTextToAvro(),args );
+     System.out.println("Exit code "+exitCode);
+     
+	}
+
+	public int run(String[] arg0) throws Exception {
+		Job job= Job.getInstance(getConf(),"Text To Avro");
+		
+		job.setJarByClass(getClass());
+		
+		FileInputFormat.setInputPaths(job, new Path(arg0[0]));
+		FileOutputFormat.setOutputPath(job, new Path(arg0[2]));
+		Schema.Parser parser = new Schema.Parser();
+		Schema schema=parser.parse(getClass().getResourceAsStream("movies.avsc"));
+	    
+		AvroJob.setMapOutputKeySchema(job,schema);
+		AvroJob.setOutputKeySchema(job, schema);
+		
+		job.setInputFormatClass(TextInputFormat.class);
+	    job.setOutputFormatClass(AvroKeyOutputFormat.class);
+
+		return 0;
+	}
+
+	public class TextToAvroMapper extends Mapper<LongWritable ,Text,AvroKey<GenericRecord>,NullWritable>{
+	   public void map(LongWritable  key,Text value,Context context) throws IOException,InterruptedException{
+		   
+	   }	
+	}
+	
+	public class TextToAvroReduce extends Reducer<AvroKey<GenericRecord>,NullWritable,AvroKey<GenericRecord>,NullWritable>{
+		public void reducer(AvroKey<GenericRecord> key,Iterable<NullWritable> value,Context context) throws IOException,InterruptedException{
+			
+		}
+	}
+}

@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
-<libraryInfo home="/usr/java/jdk1.7.0_67-cloudera/jre" version="1.7.0_67">
-<bootpath>
-<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/resources.jar"/>
-<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/rt.jar"/>
-<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/sunrsasign.jar"/>
-<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/jsse.jar"/>
-<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/jce.jar"/>
-<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/charsets.jar"/>
-<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/jfr.jar"/>
-<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/classes"/>
-</bootpath>
-<extensionDirs>
-<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/ext"/>
-<entry path="/usr/java/packages/lib/ext"/>
-</extensionDirs>
-<endorsedDirs>
-<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/endorsed"/>
-</endorsedDirs>
-</libraryInfo>
 <libraryInfo home="/usr/java/jdk1.6.0_25/jre" version="1.6.0_25">
 <bootpath>
 <entry path="/usr/java/jdk1.6.0_25/jre/lib/resources.jar"/>
@@ -36,6 +17,25 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="/usr/java/jdk1.6.0_25/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/usr/java/jdk1.7.0_67-cloudera/jre" version="1.7.0_67">
+<bootpath>
+<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/resources.jar"/>
+<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/rt.jar"/>
+<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/sunrsasign.jar"/>
+<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/jsse.jar"/>
+<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/jce.jar"/>
+<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/charsets.jar"/>
+<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/jfr.jar"/>
+<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 <libraryInfo home="/usr/java/jdk1.7.0_67-cloudera" version="1.7.0_67">
@@ -57,25 +57,6 @@
 <entry path="/usr/java/jdk1.7.0_67-cloudera/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="/usr/java/jdk1.6.0_31" version="1.6.0_31">
-<bootpath>
-<entry path="/usr/java/jdk1.6.0_31/jre/lib/resources.jar"/>
-<entry path="/usr/java/jdk1.6.0_31/jre/lib/rt.jar"/>
-<entry path="/usr/java/jdk1.6.0_31/jre/lib/sunrsasign.jar"/>
-<entry path="/usr/java/jdk1.6.0_31/jre/lib/jsse.jar"/>
-<entry path="/usr/java/jdk1.6.0_31/jre/lib/jce.jar"/>
-<entry path="/usr/java/jdk1.6.0_31/jre/lib/charsets.jar"/>
-<entry path="/usr/java/jdk1.6.0_31/jre/lib/modules/jdk.boot.jar"/>
-<entry path="/usr/java/jdk1.6.0_31/jre/classes"/>
-</bootpath>
-<extensionDirs>
-<entry path="/usr/java/jdk1.6.0_31/jre/lib/ext"/>
-<entry path="/usr/java/packages/lib/ext"/>
-</extensionDirs>
-<endorsedDirs>
-<entry path="/usr/java/jdk1.6.0_31/jre/lib/endorsed"/>
-</endorsedDirs>
-</libraryInfo>
 <libraryInfo home="/usr/java/jdk1.6.0_25" version="1.6.0_25">
 <bootpath>
 <entry path="/usr/java/jdk1.6.0_25/jre/lib/resources.jar"/>
@@ -93,6 +74,44 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="/usr/java/jdk1.6.0_25/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Java\jre1.8.0_101" version="1.8.0_101">
+<bootpath>
+<entry path="C:\Program Files\Java\jre1.8.0_101\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_101\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_101\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_101\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_101\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_101\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_101\lib\jfr.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_101\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jre1.8.0_101\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jre1.8.0_101\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/usr/java/jdk1.6.0_31" version="1.6.0_31">
+<bootpath>
+<entry path="/usr/java/jdk1.6.0_31/jre/lib/resources.jar"/>
+<entry path="/usr/java/jdk1.6.0_31/jre/lib/rt.jar"/>
+<entry path="/usr/java/jdk1.6.0_31/jre/lib/sunrsasign.jar"/>
+<entry path="/usr/java/jdk1.6.0_31/jre/lib/jsse.jar"/>
+<entry path="/usr/java/jdk1.6.0_31/jre/lib/jce.jar"/>
+<entry path="/usr/java/jdk1.6.0_31/jre/lib/charsets.jar"/>
+<entry path="/usr/java/jdk1.6.0_31/jre/lib/modules/jdk.boot.jar"/>
+<entry path="/usr/java/jdk1.6.0_31/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/usr/java/jdk1.6.0_31/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/usr/java/jdk1.6.0_31/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 </libraryInfos>
