@@ -64,6 +64,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="G:\pihorse01\hadoop_blog\HadoopAvro"/>
 			<item value="/home/cloudera/workspace/training"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -76,6 +77,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="net.icircuit.hadoop.MRUnitTestExample"/>
 			<item value="net.icircuit.hadoop.WordCount"/>
 			<item value="net.icircuit.hadoop.wordcount"/>
 		</list>
@@ -83,6 +85,7 @@
 			<item value="net.icircuit.hadoop"/>
 		</list>
 		<list key="artifactId">
+			<item value="MRUnitTestExample"/>
 			<item value="HadoopCompression"/>
 			<item value="WordCount"/>
 			<item value="wordcount"/>
