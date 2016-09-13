@@ -1,9 +1,0 @@
-{
-  "type": "record",
-  "name": "StringPair",
-  "doc": "A pair of strings.",
-  "fields": [
-    {"name": "FirstName", "type": "string"},
-    {"name": "LastName", "type": "string"}
-  ]
-}
