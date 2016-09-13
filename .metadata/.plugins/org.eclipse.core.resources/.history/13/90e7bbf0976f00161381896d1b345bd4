@@ -1,9 +1,0 @@
-import org.apache.avro.mapred.AvroKey;
-import org.apache.avro.mapred.AvroValue;
-import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.Reducer;
-
-public class ValueSumReducer extends Reducer<AvroKey<String>,AvroValue<Integer>,Text,IntWritable> {
-
-}

@@ -13,6 +13,7 @@ public class WcMapper extends Mapper<LongWritable,Text,Text,IntWritable>{
 	IOException,InterruptedException{
 		String line=value.toString();
 		String[] words=line.split(" ");
+		System.out.println("Length of "+value.toString()+" ,"+words.length );
 		for(String word:words){
 			context.write(new Text(word),new IntWritable(1));
 		}

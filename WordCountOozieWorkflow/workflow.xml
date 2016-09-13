@@ -1,0 +1,57 @@
+<workflow-app xmlns="uri:oozie:workflow:0.5" name="WordCountWF">
+
+  <start to="WordCountWF"/>
+
+  <action name="WordCountWF">
+    <map-reduce>
+      <job-tracker>${jobTracker}</job-tracker>
+      <name-node>${nameNode}</name-node>
+      <prepare>
+        <delete path="${userhome}/WordCountWF"/>
+      </prepare>
+      <configuration>
+        <property>
+        <name>mapred.mapper.new-api</name>
+        <value>true</value>
+      </property>
+      <property>
+        <name>mapred.reducer.new-api</name>
+        <value>true</value>
+      </property>
+        <property>
+          <name>mapred.mapper.class</name>
+          <value>net.icircuit.hadoop.wordcount.WcMapper</value>
+        </property>
+        <property>
+          <name>mapred.reducer.class</name>
+          <value>net.icircuit.hadoop.wordcount.WcReducer</value>
+        </property>
+         <property>
+        <name>mapred.output.key.class</name>
+        <value>org.apache.hadoop.io.Text</value>
+      </property>
+      <property>
+        <name>mapred.output.value.class</name>
+        <value>org.apache.hadoop.io.IntWritable</value>
+      </property> 
+        <property>
+          <name>mapred.input.dir</name>
+          <value>/data/mr/wordcount</value>
+        </property>
+        <property>
+          <name>mapred.output.dir</name>
+          <value>${userhome}/WordCountWF</value>
+        </property>
+      </configuration>
+    </map-reduce>
+    <ok to="success"/>
+    <error to="fail"/>
+  </action>
+
+  <kill name="fail">
+    <message>The wordcount Map-Reduce job failed!</message>
+  </kill>
+
+  <end name="success"/>
+
+</workflow-app>
